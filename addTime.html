@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/css/base.css" />
+    <link rel="stylesheet" href="css/css/addTime.css" />
+    <link rel="stylesheet" href="css/minimalisticForms.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+      integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="addTime">
+      <div id="dateTag">Enter date 1️⃣</div>
+      <div>
+        <input type="number" placeholder="Day 📅" />
+      </div>
+      <div><input id="h1" type="number" placeholder="Hour  ⌛" /></div>
+      <div><input type="number" placeholder="Minutes ⌚" /></div>
+      <div><input type="number" placeholder="Seconds  ⏱" /></div>
+      <!--Plus sign-->
+
+      <div id="addRow">
+        <span id="plusSign" class="material-icons" onclick="addTime();"> add_circle </span>
+      </div>
+
+      <!--End of plus sign-->
+      <div id="dateTag">Enter date 2️⃣</div>
+      <div>
+        <input type="number" placeholder="Day 📅" />
+      </div>
+      <div><input type="number" placeholder="Hour  ⌛" /></div>
+      <div><input type="number" placeholder="Minutes ⌚" /></div>
+      <div><input type="number" placeholder="Seconds  ⏱" /></div>
+      <!--Result section-->
+      <div id="result">
+          <h3>
+              
+          </h3>
+      </div>
+     
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.js"
+      integrity="sha512-E378bwaeZf1nwXeJGIwTB58A5gPt5jFU3u6aTGja4ZdRFJeo/N/REKnBgNZOZlH6JdnOPO98vg2AnSGaNfCMFQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/addTime.js"></script>
+  </body>
+</html>

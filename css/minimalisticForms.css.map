@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,EAAC,MAAM,CAAA;EACR,KAAK,EAAE,gBAAgB;EACvB,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,MAAM;EAClB,OAAO,EAAE,eAAe;CAC3B",
+    "sources": [
+        "minimalisticForms.scss"
+    ],
+    "names": [],
+    "file": "minimalisticForms.css"
+}

@@ -1,0 +1,74 @@
+#programsContainer {
+  display: -ms-grid;
+  display: grid;
+  gap: 30px;
+  height: 100%;
+  padding: 1em;
+  color: white;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+#programsContainer #innerGrid {
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  background-color: #d81b60;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 6fr;
+      grid-template-columns: 3fr 6fr;
+  padding: 0.5em;
+  gap: 20px;
+}
+
+#programsContainer #innerGrid span {
+  font-size: 5em;
+}
+
+#programsContainer #innerGrid img {
+  width: 100%;
+}
+
+#programsContainer #innerGrid:hover {
+  background-color: #ad1457;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  /* blue colors for links too */
+  text-decoration: inherit;
+  /* no underline */
+}
+
+header {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+footer {
+  -ms-grid-column-align: left;
+      justify-self: left;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+header {
+  text-align: center;
+  padding: 0.2em;
+  margin-bottom: 50px;
+  color: white;
+  background: #e91e63;
+}
+
+header h1 {
+  font-size: 30px;
+}
+
+header .material-icons {
+  font-size: 3em;
+}
+/*# sourceMappingURL=index.css.map */

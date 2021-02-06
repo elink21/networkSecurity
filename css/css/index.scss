@@ -1,0 +1,62 @@
+
+
+#programsContainer {
+    display: grid;
+    gap: 30px;
+    height: 100%;
+    padding: 1em;
+    color: white;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  
+    #innerGrid {
+      span {
+        font-size: 5em;
+      }
+      img{
+          width: 100%;
+      }
+      justify-items: center;
+      align-items: center;
+      height: 100%;
+      background-color: rgba(216, 27, 96, 1);
+      display: grid;
+      grid-template-columns: 3fr 6fr;
+      padding: 0.5em;
+      gap:20px;
+    }
+  
+    #innerGrid:hover {
+      background-color: rgba(173, 20, 87, 1);
+      cursor: pointer;
+    }
+  }
+  
+  a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+  }
+  
+  
+  header{
+      justify-self: center;
+  }
+  
+  footer{
+      justify-self:left;
+      align-self:flex-end;
+  }
+  
+  
+  header{
+      text-align: center;
+      padding: 0.2em;
+      margin-bottom: 50px;
+      color:white;
+      background: rgba(233,30,99 ,1);
+      h1{
+          font-size: 30px;
+      }
+      .material-icons{
+          font-size: 3em;
+      }
+  }

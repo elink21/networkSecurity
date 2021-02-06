@@ -1,0 +1,41 @@
+#addTime {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  height: 100%;
+  justify-items: center;
+}
+
+#addTime div {
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+#addRow {
+  grid-column: 2/-1;
+}
+
+#addRow span {
+  font-size: 5em;
+}
+
+#dateTag {
+  font-size: 22px;
+}
+
+#plusSign {
+  cursor: pointer;
+}
+
+#result {
+  grid-column: 2/-1;
+}
+/*# sourceMappingURL=addTime.css.map */
