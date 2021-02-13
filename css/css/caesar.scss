@@ -1,0 +1,45 @@
+#caesar {
+  display: grid;
+  height: 100vh;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  grid-template-areas:
+    "plain  .       ."
+    "addIcon      icon    encrypted"
+    "key    .       .";
+}
+
+#plain {
+  grid-area: plain;
+  align-self: end;
+}
+
+#icon {
+  grid-area: icon;
+  color: white;
+  span{
+      font-size: 150px;
+  }
+  
+}
+
+#key {
+  grid-area: key;
+  align-self: start;
+}
+
+#encrypted {
+  grid-area: encrypted;
+}
+
+#addIcon{
+    span{
+        font-size: 100px;
+    }
+    color: white;
+    grid-area: addIcon;
+}
+

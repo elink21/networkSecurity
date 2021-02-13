@@ -19,7 +19,7 @@ function addTime() {
     timeA = values.slice(0, 4);
     timeB = values.slice(4, 8);
 
-    let days={0:"Sun",1:'Mon',2:'Thu',3:"Wed",4:"Tue",5:"Fri",6:"Sat"};
+    let days={0:"Sun",1:'Mon',2:'Tue',3:"Wed",4:"Thu",5:"Fri",6:"Sat"};
 
     let res = convertToTime(convertToSeconds(timeA) + convertToSeconds(timeB));
     console.table(res);
