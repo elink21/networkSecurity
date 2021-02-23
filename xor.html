@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/css/xor.css" />
+    <script src='js/xor.js'></script>
+    <title>Document</title>
+
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css"
+      integrity="sha512-t38vG/f94E72wz6pCsuuhcOPJlHKwPy+PY+n1+tJFzdte3hsIgYE7iEpgg/StngunGszVMrRfvwZinrza0vMTA=="
+      crossorigin="anonymous"
+    />
+    <!-- Compiled and minified JavaScript -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"
+      integrity="sha512-m2PhLxj2N91eYrIGU2cmIu2d0SkaE4A14bCjVb9zykvp6WtsdriFCiXQ/8Hdj0kssUB/Nz0dMBcoLsJkSCto0Q=="
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!--CDN Sources-->
+  </head>
+  <body>
+    <div id="xorDiv">
+      <div id="title">
+        <h3>Xor program</h3>
+      </div>
+      <div id="msg">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">message</i>
+          <input oninput="xorCipher()" id="msgInput" type="text" class="validate" />
+          <label for="msgInput">Message 🗨</label>
+        </div>
+      </div>
+
+      <div id="key">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">vpn_key</i>
+          <input oninput="xorCipher()" id="keyInput" type="text" class="validate" />
+          <label for="keyInput">Key 🗝</label>
+        </div>
+      </div>
+
+      <div id="binA">
+        <div class="input-field">
+          <i class="material-icons prefix">g_translate</i>
+          <input placeholder="binary message" id="binAInput" type="text" class="validate" disabled />
+          
+        </div>
+      </div>
+
+      <div id="binB">
+        <div class="input-field">
+          <i class="material-icons prefix">lock</i>
+          <input placeholder="binary key" id="binBInput" type="text" class="validate" disabled />
+          
+        </div>
+      </div>
+
+      <div id="res">
+        <div class="input-field">
+          <i class="material-icons prefix">low_priority</i>
+          <input id="resBinInput" placeholder='xor result' type="text" class="validate" disabled />
+        </div>
+        <br />
+        <div class="input-field">
+          <i class="material-icons prefix">lock_open</i>
+          <input id="resInput" placeholder='final result' type="text" class="validate" disabled />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

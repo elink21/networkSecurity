@@ -10,16 +10,16 @@
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
-      grid-template-areas: "plain  .       ." "addIcon      icon    encrypted" "key    .       .";
+      grid-template-areas: "plainDiv            .       encryptedText" "stepDiv              icon    . " "encryptedDiv    .      plainText";
 }
 
-#plain {
+#plainDiv {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: plain;
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
+  grid-area: plainDiv;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 #icon {
@@ -33,29 +33,40 @@
   font-size: 150px;
 }
 
-#key {
+#stepDiv {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: stepDiv;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#encryptedText {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: encryptedText;
+}
+
+#plainText {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: plainText;
+}
+
+#encryptedDiv {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
-  grid-area: key;
-  -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
-      align-self: start;
+  grid-area: encryptedDiv;
 }
 
-#encrypted {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
-  grid-area: encrypted;
-}
-
+/*
 #addIcon {
+  span {
+    font-size: 100px;
+  }
   color: white;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   grid-area: addIcon;
 }
-
-#addIcon span {
-  font-size: 100px;
-}
+*/
 /*# sourceMappingURL=caesar.css.map */

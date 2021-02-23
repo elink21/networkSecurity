@@ -7,39 +7,47 @@
   align-items: center;
   justify-items: center;
   grid-template-areas:
-    "plain  .       ."
-    "addIcon      icon    encrypted"
-    "key    .       .";
+    "plainDiv            .       encryptedText"
+    "stepDiv              icon    . "
+    "encryptedDiv    .      plainText";
 }
 
-#plain {
-  grid-area: plain;
-  align-self: end;
+#plainDiv {
+  grid-area: plainDiv;
+  align-self: center;
 }
 
 #icon {
   grid-area: icon;
   color: white;
-  span{
-      font-size: 150px;
+  span {
+    font-size: 150px;
   }
-  
 }
 
-#key {
-  grid-area: key;
-  align-self: start;
+#stepDiv {
+  grid-area: stepDiv;
+  align-self: center;
 }
 
-#encrypted {
-  grid-area: encrypted;
+#encryptedText {
+  grid-area: encryptedText;
 }
 
-#addIcon{
-    span{
-        font-size: 100px;
-    }
-    color: white;
-    grid-area: addIcon;
+#plainText{
+  grid-area: plainText;
 }
 
+#encryptedDiv{
+  grid-area: encryptedDiv;
+}
+
+/*
+#addIcon {
+  span {
+    font-size: 100px;
+  }
+  color: white;
+  grid-area: addIcon;
+}
+*/

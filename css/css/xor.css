@@ -1,0 +1,58 @@
+body {
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+#xorDiv {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  padding: 30px;
+  gap: 10px;
+  height: 100vh;
+  margin: 0;
+      grid-template-areas: "title title" "msg binA" "key binB" ".      res" ".      res";
+}
+
+#msg {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: msg;
+}
+
+#key {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: key;
+}
+
+#binA {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: binA;
+}
+
+#binB {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: binB;
+}
+
+#res {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: res;
+}
+
+#title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: title;
+  text-align: center;
+}
+/*# sourceMappingURL=xor.css.map */

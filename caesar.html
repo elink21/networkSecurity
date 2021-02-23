@@ -22,28 +22,52 @@
   </head>
   <body>
     <div id="caesar">
-      <div id="plain">
-        <input id="plainInput" type="text" placeholder="Enter plain text 📑" />
+      <div id="plainDiv">
+        <input
+          id="plainInput"
+          oninput="encryptText(this.value)"
+          type="text"
+          placeholder="Enter plain text 📑"
+        />
       </div>
 
-      <div id="key">
-        <input id="keyInput" type="number" placeholder="Enter key 🔑" />
+      <div id="stepDiv">
+        <input
+          id="stepInput"
+          type="number"
+          placeholder="Enter step 📏"
+          oninput="updateBoth()"
+        />
+      </div>
+
+      <div id="encryptedDiv">
+        <input
+          id="encryptedInput"
+          type="text"
+          placeholder="Enter encrypted text 🛅"
+          oninput="decryptText(this.value)"
+        />
       </div>
 
       <div id="icon">
         <span class="material-icons"> double_arrow </span>
       </div>
 
-      <div id="addIcon">
-        <span class="material-icons"> add_circle_outline </span>
-      </div>
-
-      <div id="encrypted">
+      <div id="encryptedText">
         <input
-          id="encryptedInput"
+          id="encryptedTag"
           type="text"
           disabled
           placeholder="Encrypted string 🔏"
+        />
+      </div>
+
+      <div id="plainText">
+        <input
+          id="plainTag"
+          type="text"
+          disabled
+          placeholder="Decrypted string 📝"
         />
       </div>
     </div>

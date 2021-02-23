@@ -1,0 +1,46 @@
+body {
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+#xorDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  padding: 30px;
+  gap: 10px;
+  height:100vh;
+  margin: 0;
+
+  grid-template-areas:
+    "title title"
+    "msg binA"
+    "key binB"
+    ".      res"
+    ".      res";
+}
+
+#msg {
+  grid-area: msg;
+}
+
+#key {
+  grid-area: key;
+}
+
+#binA {
+  grid-area: binA;
+}
+
+#binB {
+  grid-area: binB;
+}
+
+#res {
+  grid-area: res;
+}
+
+#title{
+    grid-area: title;
+    text-align: center;
+}
