@@ -1,0 +1,50 @@
+#vigenereDiv {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-areas: 'title title' 'msg    res' 'key      .' 'encoded   decoded';
+  padding: 20px;
+  gap: 20px;
+}
+
+#key {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: key;
+}
+
+#msg {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: msg;
+}
+
+#res {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: res;
+}
+
+#title {
+  text-align: center;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: title;
+}
+
+#encoded {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: encoded;
+}
+
+#decoded {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: decoded;
+}
+/*# sourceMappingURL=vigenere.css.map */

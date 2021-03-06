@@ -1,0 +1,38 @@
+#vigenereDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+    grid-template-areas:
+    'title title'
+    'msg    res'
+    'key      .'
+    'encoded   decoded';
+    padding:20px;
+    gap: 20px;
+}
+
+#key{
+    grid-area: key;
+}
+
+#msg{
+    grid-area: msg;
+}
+
+#res{
+    grid-area: res;
+}
+
+#title{
+    text-align: center;
+    grid-area: title;
+}
+
+#encoded{
+    grid-area: encoded;
+}
+
+#decoded{
+    grid-area: decoded;
+}
