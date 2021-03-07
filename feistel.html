@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/css/feistel.css" />
+    <script src="js/feistel.js"></script>
+    <title>Document</title>
+
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.css"
+      integrity="sha512-t38vG/f94E72wz6pCsuuhcOPJlHKwPy+PY+n1+tJFzdte3hsIgYE7iEpgg/StngunGszVMrRfvwZinrza0vMTA=="
+      crossorigin="anonymous"
+    />
+    <!-- Compiled and minified JavaScript -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"
+      integrity="sha512-m2PhLxj2N91eYrIGU2cmIu2d0SkaE4A14bCjVb9zykvp6WtsdriFCiXQ/8Hdj0kssUB/Nz0dMBcoLsJkSCto0Q=="
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!--CDN Sources-->
+  </head>
+  <body>
+    <div id="feistelDiv">
+      <div id="inputSection">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">message</i>
+          <input id="message"  type="text" class="validate" />
+          <label for="message">Message</label>
+        </div>
+        <a class="waves-effect waves-light btn" onclick="applyFeistel();"
+          ><i class="material-icons left">send</i>Send</a
+        >
+      </div>
+
+      <div id="outputSection">
+        <div id="n" class="step">N</div>
+        <div class="a step">A</div>
+        <div class="b step">B</div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+      integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      window.onload = function () {
+        anime({
+          targets: ".step",
+          opacity:[0,1],
+          translateX: [-400,0],
+          easing:'linear'
+        });
+      };
+    </script>
+  </body>
+</html>

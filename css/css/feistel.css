@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&family=Roboto+Mono:wght@100&display=swap");
+#n {
+  font-style: italic;
+  font-size: 14px;
+}
+
+.a {
+  background-color: cornflowerblue;
+  color: white;
+  border-radius: 4px;
+}
+
+.b {
+  background-color: crimson;
+  color: white;
+  border-radius: 4px;
+}
+
+.a, .b {
+  font-size: 16px;
+}
+
+#feistelDiv {
+  font-family: "Roboto Mono";
+  font-weight: 800;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5fr 3fr;
+      grid-template-columns: 5fr 3fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  padding: 2%;
+  gap: 10px;
+  height: 100vh;
+}
+
+#feistelDiv #inputSection {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+#feistelDiv #outputSection {
+  background-color: aliceblue;
+  display: -ms-grid;
+  display: grid;
+  font-size: 20px;
+  -ms-grid-columns: 1fr (2fr)[2];
+      grid-template-columns: 1fr repeat(2, 2fr);
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+/*# sourceMappingURL=feistel.css.map */

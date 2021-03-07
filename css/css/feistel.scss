@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&family=Roboto+Mono:wght@100&display=swap");
+
+#n{
+    font-style: italic;
+    font-size: 14px;
+}
+.a{
+    background-color:cornflowerblue;
+    color:white;
+    border-radius: 4px;
+}
+
+.b{
+    background-color:crimson;
+    color:white;
+    border-radius: 4px;
+}
+
+
+.a,.b{
+    font-size: 16px;
+    
+}
+
+#feistelDiv {
+  font-family: "Roboto Mono";
+  font-weight: 800;
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  grid-template-rows: 1fr;
+  padding: 2%;
+  gap: 10px;
+
+  height: 100vh;
+  #inputSection {
+    align-self: center;
+    text-align: center;
+  }
+
+  #outputSection {
+    background-color: aliceblue;
+    display: grid;
+    font-size: 20px;
+    grid-template-columns: 1fr repeat(2, 2fr);
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+  }
+}
