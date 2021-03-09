@@ -33,21 +33,30 @@ function xor(a, b) {
     return xorString;
 }
 
+function permutation(block) {
+    [block[0],block[1],block[2],block[3]]= [block[3],block[2],block[0],block[1]];
+    return block;
+}
+
 function feistel(left, right, key) {
-    key = "01011";
+    key = "01111";
     let outputSection = document.querySelector('#outputSection');
     outputSection.innerHTML += `
-    <div id="n" class="step">Paso</div>
-    <div class="a step">Izquierda</div>
-    <div class="b step">Derecha</div>
+    <div id="n" class="step">Step</div>
+    <div class="a step">Left bits</div>
+    <div class="b step">Right bits</div>
     `;
 
     while (key.length < left.length) key = '0' + key;
 
     for (let i = 0; i < 16; i++) {
+        /*Lucifer*/
         let F = xor(right, key);
         let newRight = xor(F, left);
-        left = xor(left, key);
+
+        /*Permutaciones*/
+        left= permutation(left);
+
         right = newRight;
 
         let toAdd = `
